@@ -1,0 +1,74 @@
+site_name: Site du Fastoche 5 - Racine N'Co
+site_url: https://racinenco-prog.github.io/fastoche5/
+
+
+# Theme
+theme:
+ name: material
+ language: fr
+ logo : assets/logo_Racine.png
+ favicon: assets/favicon.ico
+ primary: deep orange
+ accent: deep orange
+ 
+
+ palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+      primary: deep orange
+      accent: deep orange
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: deep orange
+      accent: deep orange
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: deep orange
+      accent: deep orange
+  
+#extra_css:
+#  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/racinenco-prog
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:racinenco@gmail.com
